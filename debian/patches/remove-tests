@@ -1,0 +1,43 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -48,16 +48,16 @@
+ 
+ set(CMAKE_C_FLAGS "-O3")
+ 
+-option(ENABLE_CODECOVERAGE "Enable code coverage testing support" )
+-if(ENABLE_CODECOVERAGE)
+-    include (CodeCoverage)
+-    set(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
+-    setup_target_for_coverage(
+-            fuse_xattrs_coverage
+-            ./run_tests.sh
+-            coverage
+-    )
+-endif(ENABLE_CODECOVERAGE)
++#option(ENABLE_CODECOVERAGE "Enable code coverage testing support" )
++#if(ENABLE_CODECOVERAGE)
++#    include (CodeCoverage)
++#    set(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
++#    setup_target_for_coverage(
++#            fuse_xattrs_coverage
++#            ./run_tests.sh
++#            coverage
++#    )
++#endif(ENABLE_CODECOVERAGE)
+ 
+ set(SOURCE_FILES
+         fuse_xattrs.c
+@@ -80,8 +80,8 @@
+         COMPONENT doc
+ )
+ 
+-enable_testing()
+-configure_file(run_tests.sh run_tests.sh COPYONLY)
+-configure_file(test/tests.py test/tests.py COPYONLY)
+-add_test(NAME integration
+-        COMMAND run_tests.sh)
++#enable_testing()
++#configure_file(run_tests.sh run_tests.sh COPYONLY)
++#configure_file(test/tests.py test/tests.py COPYONLY)
++#add_test(NAME integration
++#        COMMAND run_tests.sh)

@@ -1,3 +1,9 @@
+fuse-attrs (0.3-1) bionic; urgency=medium
+
+  * Remove test while packaging
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 20 Nov 2019 17:07:24 +0100
+
 fuse-attrs (0.3) bionic; urgency=medium
 
   * Initial Release.
