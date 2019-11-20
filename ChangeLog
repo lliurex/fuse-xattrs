@@ -1,0 +1,22 @@
+Release 0.3 (2017-05-21)
+------------------------
+
+* Fix crash when writing a key with an empty value
+
+Release 0.2 (2017-02-26)
+------------------------
+
+* Fix tests
+* Added support to specify source directory (not mirroring the full fs /)
+* Hide sidecar files by default
+* Added man page
+* Fix crash
+* Remove sidecar when removing a file (same for renaming)
+* Optimization: don't open/close files for every operation
+* Enable optimization flags on compilation (-O3)
+* Force to run in a single-thread
+
+Release 0.1 (2016-10-23)
+------------------------
+
+* Initial release
