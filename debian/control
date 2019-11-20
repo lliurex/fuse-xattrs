@@ -1,0 +1,14 @@
+Source: fuse-attrs
+Section: utils
+Priority: optional
+Maintainer: M.Angel Juan <m.angel.juan@gmail.com>
+Build-Depends: debhelper (>= 10), cmake, libattr1-dev, libfuse-dev, python3-xattr
+Standards-Version: 4.1.2
+Homepage: https://github.com/fbarriga/fuse_xattrs
+Vcs-Git: https://github.com/fbarriga/fuse_xattrs.git
+
+Package: fuse-attrs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libattr1, fuse
+Description: Fuse filesystem providing xattr support using sidecar files
+ Fuse filesystem providing xattr support using sidecar files.
